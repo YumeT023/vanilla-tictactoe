@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__board {
+  background-color: #414361;
+  border-radius: 0.2em;
+  height: 80%;
+  width: 35rem;
+  padding: 0.5rem;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0.6rem;
+}
+
+.tile {
+  background-color: #fff;
+  border-radius: inherit;
+  cursor: pointer;
+  font-family: cursive;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile__value {
+  scale: 2.7;
+}
+
+.tile:hover {
+  background-color: #e3de8f;
+  cursor: cell;
+}
+
+.tile-hide {
+  visibility: hidden;
+}
+
+.winner-color {
+  background-color: #793E51;
+  color: #fff;
+}
+
+.winner-color:hover {
+  background-color: #944C63;
+}
